@@ -11,44 +11,20 @@
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    
-   <style type="text/css" media="screen">
-        #editor { 
-           position: relative;
-           top: 0;
-           right: 0;
-           bottom: 0;
-           left: 0;
-       }
-      .ace_editor.ace_marker-layer.ace_active-line {
-         background: #333435;}
-   </style>
-    
 </head>
 <body>
    <div class="container">
-  <div class="row">
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-  </div> 
+      <div class="row">
+         <div class="col-sm">
+            One of three columns
+         </div>
+         <div class="col-sm">
+            One of three columns
+         </div>
+         <div class="col-sm">
+            One of three columns
+         </div>
+      </div> 
    </div>
-    
-<script src="./src-noconflict/ace.js" type="text/javascript" 
-charset="utf-8"></script>
-<script>
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/pastel_on_dark");
-    editor.setFontSize(18);     
-    editor.setHighlightActiveLine(true);
-    editor.session.setMode("ace/mode/c_cpp");
-</script>
-    
 </body>
 </html>
