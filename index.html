@@ -475,6 +475,16 @@ return nil</div>
     </div>
     <!-- /#wrapper -->
 
+<script src="./src-noconflict/ace.js" type="text/javascript" 
+charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/pastel_on_dark");
+    editor.setFontSize(18);     
+    editor.setHighlightActiveLine(true);
+    editor.session.setMode("ace/mode/c_cpp");
+</script>
+    
     <script type="text/javascript">
         jQuery(function ($) {
             var performance = [12, 43, 34, 22, 12, 33, 4, 17, 22, 34, 54, 67],
