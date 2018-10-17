@@ -19,20 +19,50 @@
 <div class="container-fluid">
   <nav class="navbar navbar-inverse">
     <a class="navbar-brand" href="#">xcloud</a>
-    <div class="dropdown">
-       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-       File
-       <span class="caret"></span>
-       </button>
-       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#">New</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-open" aria-hidden="true"></span> Open</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span> Save</a></li>
-          <li><a href="#">Close</a></li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Files
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">New</a>
+                <a class="dropdown-item" href="#">Open</a>
+                <a class="dropdown-item" href="#">Save</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Close</a>
+             </div>
+          </li>
+          <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Edit
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Cut</a>
+                <a class="dropdown-item" href="#">Copy</a>
+                <a class="dropdown-item" href="#">Paste</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Search</a>
+                <a class="dropdown-item" href="#">Replace</a>
+             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Run</a>
+          </li>
        </ul>
+       <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+       </form>
     </div>
-    <button type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>  Run</button>
-  </nav>  
+  </nav>
+
   <div class="row">
     <div class="col-sm-2" style="background-color:lavender;">Project files</div>
     <div class="col-sm-8">
