@@ -10,10 +10,28 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-2" style="background-color:lavender;">.col-sm-4</div>
-    <div class="col-sm-7" style="background-color:lavenderblush;">.col-sm-8</div>
+    <div class="col-sm-7" style="background-color:lavenderblush;">
+<div id="editor">#include "xcloud.ch"
+
+function Main()
+ 
+   MsgInfo( "Hello world from xcloud" )
+    
+return nil</div>
+    </div>
     <div class="col-sm-3" style="background-color:lavender;">.col-sm-4</div>
   </div>
 </div>
     
+<script src="./ace-builds/src-noconflict/ace.js" type="text/javascript" 
+charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/pastel_on_dark");
+    editor.setFontSize(18);     
+    editor.setHighlightActiveLine(true);
+    editor.session.setMode("ace/mode/c_cpp");
+</script>  
+  
 </body>
 </html>
