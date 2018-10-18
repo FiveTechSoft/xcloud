@@ -173,11 +173,28 @@ charset="utf-8"></script>
         <input type="file" id="myFile">
       </div>
       <div class="modal-footer">  
-        <button class="btn btn-success btn-lg" data-dismiss="modal">Ok</button>
+        <button class="btn btn-success btn-lg" onclick="OpenFile()" data-dismiss="modal">Ok</button>
       </div> 
     </div>
   </div>
 </div> 
   
 </body>
+  
+<script>  
+function OpenFile()
+{
+   var input = document.getElementById( "myFile" );
+   var reader = new FileReader();
+   
+   if( input.files )
+   {
+      reader.addEventListener('load', function (e) {
+         alert( e.target.result ); } );
+         
+      reader.readAsBinaryString( input.files[ 0 ] ); 
+   }
+}   
+</script>  
+  
 </html>
