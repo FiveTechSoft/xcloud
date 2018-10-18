@@ -194,7 +194,7 @@ function OpenFile()
       reader = new FileReader();
      
       reader.addEventListener('load', function (e) {
-         editor.session.setValue( e.target.result, -1 ); } );
+         editor.setValue( e.target.result, -1 ); } );
          
       reader.readAsBinaryString( input.files[ 0 ] ); 
    }
