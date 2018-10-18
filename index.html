@@ -44,9 +44,9 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Edit
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a onclick="editor.cut()">Cut</a></li>
-          <li><a onclick="editor.copy()">Copy</a></li>
-          <li><a onclick="editor.paste()">Paste</a></li>
+          <li><a onclick="document.execCommand('cut')">Cut</a></li>
+          <li><a onclick="document.execCommand('copy')">Copy</a></li>
+          <li><a onclick="document.execCommand('paste')">Paste</a></li>
         </ul>
       </li>
       <form class="navbar-form navbar-left" action="">
