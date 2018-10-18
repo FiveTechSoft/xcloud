@@ -34,7 +34,7 @@
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">New</a></li>
-          <li><a onclick="new FileReader()">Open</a></li>
+          <li><a onclick="$('#openfile').modal()">Open</a></li>
           <li><a href="#">Save</a></li>
           <li class="divider"></li>
           <li><a href="#">Close</a></li>
@@ -154,6 +154,23 @@ charset="utf-8"></script>
       <div class="modal-body" style="padding:40px 50px;">
         <p>xcloud - The Harbour IDE on the clouds</p><br>
         <p>(c) FiveTech Software 2018</p>
+      </div>
+      <div class="modal-footer">  
+        <button class="btn btn-success btn-lg" data-dismiss="modal">Ok</button>
+      </div> 
+    </div>
+  </div>
+</div> 
+
+<div class="modal fade" id="openfile" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Select a file</h5>
+      </div>
+      <div class="modal-body" style="padding:40px 50px;">
+        <input type="file" id="myFile">
       </div>
       <div class="modal-footer">  
         <button class="btn btn-success btn-lg" data-dismiss="modal">Ok</button>
