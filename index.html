@@ -185,12 +185,16 @@ charset="utf-8"></script>
 function OpenFile()
 {
    var input = document.getElementById( "myFile" );
-   var reader = new FileReader();
+   var reader;
    
    if( input.files )
    {
+      var editor = document.getElementById( "editor" );
+     
+      reader = new FileReader();
+     
       reader.addEventListener('load', function (e) {
-         alert( e.target.result ); } );
+         editor.setValue( e.target.result, 1 ); } );
          
       reader.readAsBinaryString( input.files[ 0 ] ); 
    }
