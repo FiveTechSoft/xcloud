@@ -206,7 +206,11 @@ function SendFile( cFileName )
    var xhr = new XMLHttpRequest();
   
    formData.append( "test", "this is a test" );
-   xhr.onreadystatechange = function() { alert( this.responseText ); };
+   xhr.onreadystatechange = function() { 
+     if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
+        alert( this.responseText );
+    } 
+   };
    xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/upload.php' );
    xhr.send( formData );
 }
