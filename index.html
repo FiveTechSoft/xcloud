@@ -204,8 +204,11 @@ function SendFile( cFileName )
 {
    var formData = new FormData();
    var xhr = new XMLHttpRequest();
+   var mystring = "this is a test";
+   var myblob = new Blob( [ mystring ], {
+                type: 'text/plain' } );
   
-   formData.append( "test", "this is a test" );
+   formData.append( "test", myblob, "test.txt" );
    xhr.onreadystatechange = function() { 
      if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
         alert( this.responseText );
