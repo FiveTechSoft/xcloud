@@ -207,7 +207,7 @@ function SendFile( cFileName )
    var myblob = new Blob( [ editor.getValue() ], {
                 type: 'text/plain' } );
   
-   formData.append( "test", myblob, "test.txt" );
+   formData.append( "test", myblob, "test.prg" );
    xhr.onreadystatechange = function() { 
      if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
         alert( this.responseText );
