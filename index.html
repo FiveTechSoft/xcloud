@@ -204,8 +204,7 @@ function SendFile( cFileName )
 {
    var formData = new FormData();
    var xhr = new XMLHttpRequest();
-   var mystring = "this is a test";
-   var myblob = new Blob( [ mystring ], {
+   var myblob = new Blob( [ editor.getValue() ], {
                 type: 'text/plain' } );
   
    formData.append( "test", myblob, "test.txt" );
