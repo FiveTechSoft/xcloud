@@ -1,29 +1,31 @@
-// xcloud styles
+#editor { 
+   height: 650px;
+}
+   
+.ace_editor .ace_marker-layer .ace_active-line {
+   background: #3e3f41; }
 
-  <style type="text/css" media="screen">
-    #editor { 
-        height: 650px;
-    }
-   .ace_editor .ace_marker-layer .ace_active-line {
-      background: #3e3f41; }
-   .container-fluid {
-     padding-left: 0px;
-     padding-right: 0px;
-   }  
-   .row div {
-     padding-left: 0px;
-     padding-right: 0px;
-   }
-   .navbar {
-     margin-bottom: 0px;
-     border-radius: 0px;
-     padding-left: 10px;
-     padding-right: 10px;
-   }  
-   .dropdown-menu {
-     background-color: silver;
-   }  
-   .modal-content { 
-     background-color: silver;
-   }  
-  </style>  
+.container-fluid {
+   padding-left: 0px;
+   padding-right: 0px;
+}  
+   
+.row div {
+   padding-left: 0px;
+   padding-right: 0px;
+}
+   
+.navbar {
+   margin-bottom: 0px;
+   border-radius: 0px;
+   padding-left: 10px;
+   padding-right: 10px;
+}  
+   
+.dropdown-menu {
+   background-color: silver;
+}  
+   
+.modal-content { 
+   background-color: silver;
+}  
