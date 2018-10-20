@@ -93,7 +93,7 @@
           <li><a href="#">Remove item</a></li>
         </ul>
       </li>
-      <li><button class="btn btn-success navbar-btn"><span class="glyphicon glyphicon-flash"></span> Run</button></li>
+      <li><button class="btn btn-success navbar-btn" onclick="Run()"><span class="glyphicon glyphicon-flash"></span> Run</button></li>
       <li><a href="#">Help</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -243,6 +243,23 @@ function SendFile( cFileName )
     } 
    };
    xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/upload.php' );
+   xhr.send( formData );
+}
+  
+function Run()  
+{  
+   var formData = new FormData();
+   var xhr = new XMLHttpRequest();
+   var myblob = new Blob( [ editor.getValue() ], {
+                type: 'text/plain' } );
+  
+   formData.append( "test", myblob, "test.prg" );
+   xhr.onreadystatechange = function() { 
+     if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
+        alert( this.responseText );
+    } 
+   };
+   xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/run.php' );
    xhr.send( formData );
 }
   
