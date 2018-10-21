@@ -43,15 +43,15 @@ function Run()
    formData.append( "test", myblob, "test.prg" );
    xhr.onreadystatechange = function() { 
      if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
-        ShowResult( this.responseText.substring( this.responseText.indexOf( "<body>" ),
-                                                 this.responseText.indexOf( "</body>" ) ) );
+        MsgInfo( this.responseText.substring( this.responseText.indexOf( "<body>" ),
+                                                 this.responseText.indexOf( "</body>" ) ), "Result" );
     } 
    };
    xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/run.php' );
    xhr.send( formData );
 }
   
-function ShowResult( cResult )
+function MsgInfo( cMsg, cTitle )
 {  
    var div1 = document.createElement( "div" );
    var div2 = document.createElement( "div" );
@@ -73,11 +73,11 @@ function ShowResult( cResult )
    div4.className = "modal-header";
    div3.appendChild( div4 );
    div4.innerHTML = "<button type='button' class='close' data-dismiss='modal'>&times;</button>" +
-                    "<h4 class='modal-title'>Information</h4>";
+                    "<h4 class='modal-title'>" + cTitle + "</h4>";
 
    div5.className = "modal-body";
    div3.appendChild( div5 );
-   div5.innerHTML = "<p>" + cResult + "</p>";
+   div5.innerHTML = cMsg;
 
    div6.className = "modal-footer";
    div3.appendChild( div6 );
