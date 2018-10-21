@@ -1,5 +1,3 @@
-// xcloud javascript
-
 function OpenFile()
 {
    var input = document.getElementById( "myFile" );
