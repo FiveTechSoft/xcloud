@@ -41,7 +41,7 @@ function Run()
    formData.append( "test", myblob, "test.prg" );
    xhr.onreadystatechange = function() { 
      if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
-        MsgInfo( this.responseText, "result" );
+        Result( this.responseText );
     } 
    };
    xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/run.php' );
@@ -85,3 +85,16 @@ function MsgInfo( cMsg, cTitle )
    document.body.appendChild( div1 );
    $('#msginfo').modal('show');  
 }
+
+function Result( cMsg )
+{  
+   var div1 = document.createElement( "div" );
+
+   div1.className = "modal fade";
+   div1.id = "result";
+   div1.innerHTML = cMsg;
+
+   document.body.appendChild( div1 );
+   $('#msginfo').modal('show');  
+}
+
