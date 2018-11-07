@@ -42,7 +42,7 @@ function Run()
    xhr.onreadystatechange = function() { 
      if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
         document.body.innerHTML = this.responseText;
-        eval( document.body );
+        eval( document.body.innerHTML );
     } 
    };
    xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/run.php' );
