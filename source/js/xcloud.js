@@ -41,9 +41,7 @@ function Run()
    formData.append( "test", myblob, "test.prg" );
    xhr.onreadystatechange = function() { 
      if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
-        document.open();
-        document.write( this.responseText );
-        document.close();
+        document.innerHTML = this.responseText;
     } 
    };
    xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/run.php' );
