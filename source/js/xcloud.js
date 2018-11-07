@@ -42,7 +42,7 @@ function Run()
    xhr.onreadystatechange = function() { 
      if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
         var script = document.createElement( "script" );
-        script.innerHTML = this.responseText;
+        script.textContent = this.responseText;
         document.body.innerHTML = "";
         document.body.appendChild( script );
     } 
