@@ -45,6 +45,7 @@ function Run()
     } 
    };
    xhr.open( "POST", 'https://harbour.fourtech.es/modharbour_examples/run.prg' );
+   console.log( formData );
    xhr.send( formData );
 }
   
