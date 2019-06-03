@@ -33,20 +33,18 @@ function SendFile( cFileName )
   
 function Run()  
 {  
-   var formData = new FormData();
+   var cCode = editor.getValue();
    var xhr = new XMLHttpRequest();
-   var myblob = new Blob( [ editor.getValue() ], {
-                type: 'text/plain' } );
-  
-   formData.append( "test", myblob, "test.prg" );
+
    xhr.onreadystatechange = function() { 
      if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
         document.write( this.responseText );
     } 
    };
-   xhr.open( "POST", 'https://harbour.fourtech.es/modharbour_examples/run.prg' );
-   console.log( formData );
-   xhr.send( formData );
+   
+   xhr.open( "POST", 'https://harbour.fourtech.es/modharbour_examples/run.prg', true );
+   console.log( cCode );
+   xhr.send( cCode );
 }
   
 function MsgInfo( cMsg, cTitle )
