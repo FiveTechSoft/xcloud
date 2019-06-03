@@ -39,7 +39,7 @@ function Run()
    console.log( 'PARAM', o );
             
    $.post( "https://harbour.fourtech.es/modharbour_examples/run.prg", o )
-      .done( function( data ) { console.log( 'DONE', data ); $("#result").innerHTML = data; } )
+      .done( function( data ) { console.log( 'DONE', data ); $('#result').html( data ); } )
       .fail( function( data ) { console.log( 'ERROR', data ); } ); 
 }
   
