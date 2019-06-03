@@ -31,13 +31,16 @@ function SendFile( cFileName )
    xhr.send( formData );
 }
   
-function Run()  
-{  
+function Run()
+{
    var o = new Object();
-   o[ 'source' ] = editor.getValue();
    
-   console.log( o );
+   o[ 'source' ] = editor.getValue();
+   console.log( 'PARAM', o );
+            
    $.post( "https://harbour.fourtech.es/modharbour_examples/run.prg", o )
+      .done( function( data ) { console.log( 'DONE', data ); document.write( data ); })
+      .error( function( data ) { console.log( 'ERROR', data ); }); 
 }
   
 function MsgInfo( cMsg, cTitle )
