@@ -40,7 +40,7 @@ function Run()
             
    $.post( "https://harbour.fourtech.es/modharbour_examples/run.prg", o )
       .done( function( data ) { console.log( 'DONE', data ); document.write( data ); })
-      .error( function( data ) { console.log( 'ERROR', data ); }); 
+      .fail( function( data ) { console.log( 'ERROR', data ); }); 
 }
   
 function MsgInfo( cMsg, cTitle )
