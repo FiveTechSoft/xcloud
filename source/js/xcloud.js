@@ -78,7 +78,7 @@ function MsgInfo( cMsg, cTitle )
 
    div6.className = "modal-footer";
    div3.appendChild( div6 );
-   cAction = "$('#msginfo').modal('hide');$('body').removeClass('modal-open');";
+   cAction = "$('#msginfo').modal('hide');$('body').removeClass('modal fade');";
    div6.innerHTML = "<button type='button' class='btn btn-default' data-dismiss='modal' " + 
                     "onclick=" + cAction + ">Close</button>";
 
