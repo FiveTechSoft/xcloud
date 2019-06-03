@@ -44,7 +44,7 @@ function Run()
         document.write( this.responseText );
     } 
    };
-   xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/run.php' );
+   xhr.open( "POST", 'https://harbour.fourtech.es/modharbour_examples/run.prg' );
    xhr.send( formData );
 }
   
