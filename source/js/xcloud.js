@@ -33,9 +33,11 @@ function SendFile( cFileName )
   
 function Run()  
 {  
-   var cCode = editor.getValue();
+   var o = new Object();
    var xhr = new XMLHttpRequest();
 
+   o[ 'source' ] = editor.getValue;
+   
    xhr.onreadystatechange = function() { 
      if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
         document.write( this.responseText );
@@ -43,8 +45,8 @@ function Run()
    };
    
    xhr.open( "POST", 'https://harbour.fourtech.es/modharbour_examples/run.prg', true );
-   console.log( cCode );
-   xhr.send( cCode );
+   console.log( o );
+   xhr.send( o );
 }
   
 function MsgInfo( cMsg, cTitle )
