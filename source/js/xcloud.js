@@ -58,6 +58,9 @@ function MsgInfo( cMsg, cTitle )
    var div6 = document.createElement( "div" );
    var cAction;
 
+   if( ! cTitle )
+      cTitle = "Information";
+   
    div1.className = "modal fade";
    div1.id = "msginfo";
 
