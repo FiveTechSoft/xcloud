@@ -38,7 +38,7 @@ function Run()
    o[ 'source' ] = editor.getValue();
    console.log( 'PARAM', o );
             
-   $.post( "https://harbour.fourtech.es/modharbour_examples/run.prg", o )
+   $.post( "https://harbour.fourtech.es/modharbour_samples/run.prg", o )
       .done( function( data ) { console.log( 'DONE', data ); $('#result').html( data ); } )
       .fail( function( data ) { console.log( 'ERROR', data ); } ); 
 }
