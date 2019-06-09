@@ -31,21 +31,16 @@ function SendFile( cFileName )
    xhr.send( formData );
 }
   
-function Run()  
-{  
-   var formData = new FormData();
-   var xhr = new XMLHttpRequest();
-   var myblob = new Blob( [ editor.getValue() ], {
-                type: 'text/plain' } );
-  
-   formData.append( "test", myblob, "test.prg" );
-   xhr.onreadystatechange = function() { 
-     if( this.readyState == XMLHttpRequest.DONE && this.status == 200 ) {
-        document.write( this.responseText );
-    } 
-   };
-   xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/run.php' );
-   xhr.send( formData );
+function Run()
+{
+   var o = new Object();
+   
+   o[ 'source' ] = editor.getValue();
+   console.log( 'PARAM', o );
+            
+   $.post( "run.prg", o )
+      .done( function( data ) { console.log( 'DONE', data ); $('#result').html( data ); } )
+      .fail( function( data ) { console.log( 'ERROR', data ); } ); 
 }
   
 function MsgInfo( cMsg, cTitle )
@@ -58,6 +53,9 @@ function MsgInfo( cMsg, cTitle )
    var div6 = document.createElement( "div" );
    var cAction;
 
+   if( ! cTitle )
+      cTitle = "Information";
+   
    div1.className = "modal fade";
    div1.id = "msginfo";
 
@@ -78,7 +76,7 @@ function MsgInfo( cMsg, cTitle )
 
    div6.className = "modal-footer";
    div3.appendChild( div6 );
-   cAction = "$('#msginfo').modal('hide');";
+   cAction = "document.getElementById('msginfo').remove();";
    div6.innerHTML = "<button type='button' class='btn btn-default' data-dismiss='modal' " + 
                     "onclick=" + cAction + ">Close</button>";
 
