@@ -60,7 +60,7 @@ function MsgInfo( cMsg, cTitle )
    div1.id = "msginfo";
 
    div2.className = "modal-dialog";
-   div2.style = "margin-top:300px;";
+   div2.style.marginTop = "300px";
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
