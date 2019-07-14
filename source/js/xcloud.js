@@ -68,8 +68,8 @@ function MsgInfo( cMsg, cTitle )
    
    div4.className = "modal-header";
    div3.appendChild( div4 );
-   div4.innerHTML = "<button type='button' class='close' data-dismiss='modal'>&times;</button>" +
-                    "<h4 class='modal-title'>" + cTitle + "</h4>";
+   div4.innerHTML = "<h4 class='modal-title'>" + cTitle + "</h4>" + 
+                    "<button type='button' class='close' data-dismiss='modal'>&times;</button>";
 
    div5.className = "modal-body";
    div3.appendChild( div5 );
