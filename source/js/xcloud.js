@@ -78,7 +78,7 @@ function MsgInfo( cMsg, cTitle )
    div6.className = "modal-footer";
    div3.appendChild( div6 );
    cAction = "document.getElementById('msginfo').remove();";
-   div6.innerHTML = "<button type='button' class='btn btn-default' data-dismiss='modal' " + 
+   div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' " + 
                     "onclick=" + cAction + ">Close</button>";
 
    document.body.appendChild( div1 );
@@ -120,9 +120,9 @@ function MsgGet( cMsg, cTitle )
    div6.className = "modal-footer";
    div3.appendChild( div6 );
    cAction = "document.getElementById('msgget').remove();";
-   div6.innerHTML = "<button type='button' class='btn btn-default' data-dismiss='modal' style='width:90px'" + 
+   div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
                     "onclick=" + cAction + ">Ok</button>" + 
-                    "<button type='button' class='btn btn-default' data-dismiss='modal' style='width:90px'" + 
+                    "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
                     "onclick=" + cAction + ">Cancel</button>";
 
    document.body.appendChild( div1 );
@@ -165,9 +165,9 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
    div6.className = "modal-footer";
    div3.appendChild( div6 );
    cAction = "document.getElementById('msgyesno').remove();";
-   div6.innerHTML = "<button type='button' class='btn btn-default' data-dismiss='modal' " + 
+   div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' " + 
                     "onclick=" + cAction + ";" + cOnYes + ' style="width:100px;">Yes</button>' + 
-                    "<button type='button' class='btn btn-default' data-dismiss='modal' " + 
+                    "<button type='button' class='btn btn-primary' data-dismiss='modal' " + 
                     "onclick=" + cAction + ' style="width:100px;">No</button>';
             
    document.body.appendChild( div1 );
