@@ -175,6 +175,50 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
    $('#msgyesno').modal('show');
 }
 
+function MsgMemo( cMsg, cTitle )
+{  
+   var div1 = document.createElement( "div" );
+   var div2 = document.createElement( "div" );
+   var div3 = document.createElement( "div" );
+   var div4 = document.createElement( "div" );
+   var div5 = document.createElement( "div" );
+   var div6 = document.createElement( "div" );
+   var cAction;
+
+   if( ! cTitle )
+      cTitle = "Memo";
+   
+   div1.className = "modal fade";
+   div1.id = "msgmemo";
+
+   div2.className = "modal-dialog";
+   div2.style.marginTop = "200px";
+   div2.style.marginLeft = "500px";
+   div1.appendChild( div2 );
+
+   div3.className = "modal-content";
+   div3.style.width = "1000px";
+   div2.appendChild( div3 );
+   
+   div4.className = "modal-header";
+   div3.appendChild( div4 );
+   div4.innerHTML = "<h4 class='modal-title'>" + cTitle + "</h4>" + 
+                    "<button type='button' class='close' data-dismiss='modal'>&times;</button>";
+
+   div5.className = "modal-body";
+   div3.appendChild( div5 );
+   div5.innerHTML = '<textarea rows="15" cols="127" value="' + cMsg + '"></textarea>';
+
+   div6.className = "modal-footer";
+   div3.appendChild( div6 );
+   cAction = "document.getElementById('msgmemo').remove();";
+   div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' " + 
+                    "onclick=" + cAction + ">Close</button>";
+
+   document.body.appendChild( div1 );
+   $('#msgmemo').modal('show');  
+}
+
 function Result( cMsg )
 {  
    var div1 = document.createElement( "div" );
