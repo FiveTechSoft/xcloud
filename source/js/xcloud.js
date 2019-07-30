@@ -207,7 +207,7 @@ function MsgMemo( cMsg, cTitle )
 
    div5.className = "modal-body";
    div3.appendChild( div5 );
-   div5.innerHTML = '<textarea id="memo" rows="15" cols="127" value="' + cMsg + '" style="margin-left:0px;"></textarea>';
+   div5.innerHTML = '<textarea id="memo" rows="15" cols="129" value="' + cMsg + '" style="margin-left:0px;"></textarea>';
 
    div6.className = "modal-footer";
    div3.appendChild( div6 );
