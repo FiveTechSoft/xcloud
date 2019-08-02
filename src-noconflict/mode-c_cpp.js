@@ -60,7 +60,7 @@ var c_cppHighlightRules = function() {
 
     var keywordControls = (
         "break|case|continue|default|do|else|for|goto|if|_Pragma|" +
-        "return|switch|while|catch|operator|try|throw|using"
+        "function|local|next|return|switch|while|catch|operator|try|throw|using"
     );
     
     var storageType = (
@@ -81,7 +81,7 @@ var c_cppHighlightRules = function() {
     );
 
     var builtinConstants = (
-        "NULL|true|false|TRUE|FALSE|nullptr"
+        "nil|NULL|true|false|TRUE|FALSE|nullptr"
     );
 
     var keywordMapper = this.$keywords = this.createKeywordMapper({
