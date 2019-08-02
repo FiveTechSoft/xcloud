@@ -81,7 +81,7 @@ var c_cppHighlightRules = function() {
     );
 
     var builtinConstants = (
-        "Super|Self|nil|NULL|true|false|TRUE|FALSE|nullptr"
+        ".T.|.F.|Super|Self|nil|NULL|true|false|TRUE|FALSE|nullptr"
     );
 
     var keywordMapper = this.$keywords = this.createKeywordMapper({
