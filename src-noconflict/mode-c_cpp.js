@@ -60,7 +60,7 @@ var c_cppHighlightRules = function() {
 
     var keywordControls = (
         "break|case|continue|default|do|else|for|goto|if|_Pragma|" +
-        "CLASS|FROM|ENDCLASS|DATA|AS|CLASSDATA|CLASSVAR|CONSTRUCTOR|INIT|INLINE|VIRTUAL|METHOD|function|local|next|end|endif|return|switch|while|catch|operator|try|throw|using"
+        "DEFAULT|CLASS|FROM|ENDCLASS|DATA|AS|CLASSDATA|CLASSVAR|CONSTRUCTOR|INIT|INLINE|VIRTUAL|METHOD|function|local|next|end|endif|return|switch|while|catch|operator|try|throw|using"
     );
     
     var storageType = (
