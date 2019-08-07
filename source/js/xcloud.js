@@ -52,10 +52,8 @@ function RunCode( cCode )
    console.log( 'PARAM', o );
             
    $.post( "run.prg", o )
-      .done( function( data ) { console.log( 'DONE', data ); cResult = data; } )
+      .done( function( data ) { console.log( 'DONE', data ); $('#memo').html( data ); } )
       .fail( function( data ) { console.log( 'ERROR', data ); } );
-   
-   return cResult;
 }
 
 function MsgInfo( cMsg, cTitle )
