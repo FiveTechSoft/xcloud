@@ -230,7 +230,7 @@ function MsgMemo( cMsg, cTitle, lHtml )
    if( ! lHtml )
       div5.innerHTML = '<textarea id="memo" rows="15" cols="118" style="margin-left:0px;">' + cMsg + '</textarea>';
    else
-      div5.innerHTML = '<div id="memo"></div>';
+      div5.innerHTML = '<div id="memo" style="overflow:auto;"></div>';
 
    div6.className = "modal-footer";
    div3.appendChild( div6 );
