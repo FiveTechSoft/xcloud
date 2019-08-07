@@ -27,7 +27,7 @@ function SendFile( cFileName )
         alert( this.responseText );
     } 
    };
-   xhr.open( "POST", 'https://www.fivetechsoft.com/xcloud/upload.php' );
+   xhr.open( "POST", 'upload.prg' );
    xhr.send( formData );
 }
   
@@ -61,6 +61,7 @@ function MsgInfo( cMsg, cTitle )
 
    div2.className = "modal-dialog";
    div2.style.marginTop = "300px";
+   div2.style.boxShadow = "10px 10px 10px darkslategrey";
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
@@ -104,6 +105,7 @@ function MsgGet( cMsg, cTitle )
 
    div2.className = "modal-dialog";
    div2.style.marginTop = "300px";
+   div2.style.boxShadow = "10px 10px 10px darkslategrey";
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
@@ -150,6 +152,7 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
             
    div2.className = "modal-dialog";
    div2.style.marginTop = "300px";
+   div2.style.boxShadow = "10px 10px 10px darkslategrey";
    div1.appendChild( div2 );
             
    div3.className = "modal-content";
