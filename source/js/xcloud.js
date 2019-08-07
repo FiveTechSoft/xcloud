@@ -219,6 +219,7 @@ function MsgMemo( cMsg, cTitle )
 
    document.body.appendChild( div1 );
    $('#msgmemo').draggable();
+   $('#msgmemo').css( 'box-shadow', '10px 10px 10px darkslategrey' );
    $('#msgmemo').modal('show');  
 }
 
