@@ -48,7 +48,7 @@ function RunCode( cCode )
    var o = new Object();
    var cResult;
    
-   o[ 'source' ] = cCode;
+   o[ 'source' ] = atob( cCode );
    console.log( 'PARAM', o );
             
    $.post( "run.prg", o )
