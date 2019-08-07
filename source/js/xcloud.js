@@ -193,7 +193,7 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
    $('#msgyesno').modal('show');
 }
 
-function MsgMemo( cMsg, cTitle )
+function MsgMemo( cMsg, cTitle, lHtml )
 {  
    var div1 = document.createElement( "div" );
    var div2 = document.createElement( "div" );
@@ -226,7 +226,11 @@ function MsgMemo( cMsg, cTitle )
 
    div5.className = "modal-body";
    div3.appendChild( div5 );
-   div5.innerHTML = '<textarea id="memo" rows="15" cols="118" style="margin-left:0px;">' + cMsg + '</textarea>';
+   
+   if( ! lHtml )
+      div5.innerHTML = '<textarea id="memo" rows="15" cols="118" style="margin-left:0px;">' + cMsg + '</textarea>';
+   else
+      div5.innerHTML = '<div id="memo"></div>';
 
    div6.className = "modal-footer";
    div3.appendChild( div6 );
