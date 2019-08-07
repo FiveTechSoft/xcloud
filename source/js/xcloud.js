@@ -192,7 +192,7 @@ function MsgMemo( cMsg, cTitle )
    div1.id = "msgmemo";
 
    div2.className = "modal-dialog";
-   div2.style.marginTop = "200px";
+   div2.style.marginTop = "150px";
    div2.style.marginLeft = "500px";
    div1.appendChild( div2 );
 
