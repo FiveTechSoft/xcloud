@@ -216,7 +216,7 @@ function MsgMemo( cMsg, cTitle )
                     "onclick=" + cAction + ">Close</button>";
 
    document.body.appendChild( div1 );
-   $('#msgmemo).draggable();
+   $('#msgmemo').draggable();
    $('#msgmemo').modal('show');  
 }
 
