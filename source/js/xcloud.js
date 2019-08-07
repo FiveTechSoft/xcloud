@@ -196,7 +196,7 @@ function MsgMemo( cMsg, cTitle )
    div2.className = "modal-dialog";
    div2.style.marginTop = "150px";
    div2.style.marginLeft = "500px";
-   div2.style.box-shadow = "10px 10px 10px darkslategrey";
+   div2.style.boxShadow = "10px 10px 10px darkslategrey";
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
