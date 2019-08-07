@@ -42,7 +42,22 @@ function Run()
       .done( function( data ) { console.log( 'DONE', data ); $('#result').html( data ); } )
       .fail( function( data ) { console.log( 'ERROR', data ); } ); 
 }
-  
+
+function RunCode( cCode )
+{
+   var o = new Object();
+   var cResult;
+   
+   o[ 'source' ] = cCode;
+   console.log( 'PARAM', o );
+            
+   $.post( "run.prg", o )
+      .done( function( data ) { console.log( 'DONE', data ); cResult = data; } )
+      .fail( function( data ) { console.log( 'ERROR', data ); } );
+   
+   return cResult;
+}
+
 function MsgInfo( cMsg, cTitle )
 {  
    var div1 = document.createElement( "div" );
