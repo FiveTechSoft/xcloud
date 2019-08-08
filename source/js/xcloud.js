@@ -241,7 +241,7 @@ function MsgMemo( cMsg, cTitle, lHtml )
    div2.style.boxShadow = "10px 10px 10px darkslategrey";
    
    document.body.appendChild( div1 );
-   $('#msgmemo').resizable().draggable();
+   $('#msgmemo').draggable();
    $('#msgmemo').modal('show');  
 }
 
