@@ -212,7 +212,6 @@ function MsgMemo( cMsg, cTitle, lHtml )
    div2.className = "modal-dialog";
    div2.style.marginTop = "150px";
    div2.style.marginLeft = "500px";
-   div2.style.boxShadow = "10px 10px 10px darkslategrey";
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
@@ -239,9 +238,10 @@ function MsgMemo( cMsg, cTitle, lHtml )
                     "onclick=" + cAction + ">Close</button>";
 
    div2.style.width = "1000px";
+   div2.style.boxShadow = "10px 10px 10px darkslategrey";
    
    document.body.appendChild( div1 );
-   $('#msgmemo').draggable();
+   $('#msgmemo').resizable().draggable();
    $('#msgmemo').modal('show');  
 }
 
