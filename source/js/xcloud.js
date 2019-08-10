@@ -43,16 +43,19 @@ function Run()
       .fail( function( data ) { console.log( 'ERROR', data ); } ); 
 }
 
-function RunCode( cCode )
+function RunCode( cCode, cResultId )
 {
    var o = new Object();
    var cResult;
+   
+   if( cResultId == null )
+      cResultId = "#memo";
    
    o[ 'source' ] = atob( cCode );
    console.log( 'PARAM', o );
             
    $.post( "run.prg", o )
-      .done( function( data ) { console.log( 'DONE', data ); $('#memo').html( data ); } )
+      .done( function( data ) { console.log( 'DONE', data ); $( cResultId ).html( data ); } )
       .fail( function( data ) { console.log( 'ERROR', data ); } );
 }
 
