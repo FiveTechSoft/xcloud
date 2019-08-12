@@ -90,6 +90,7 @@ function MsgInfo( cMsg, cTitle )
                     "<button type='button' class='close' data-dismiss='modal'>&times;</button>";
 
    div5.className = "modal-body";
+   div5.style.textAlign = "center";
    div3.appendChild( div5 );
    div5.innerHTML = cMsg;
 
@@ -173,6 +174,7 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
    div1.appendChild( div2 );
             
    div3.className = "modal-content";
+   div5.style.textAlign = "center";
    div3.style.backgroundColor = "#515458";
    div2.appendChild( div3 );
                
