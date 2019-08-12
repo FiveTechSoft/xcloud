@@ -97,10 +97,11 @@ function MsgInfo( cMsg, cTitle )
    div5.innerHTML = cMsg;
 
    div6.className = "modal-footer";
-   div3.appendChild( div6 );
+   div6.style.border = "0px";
    cAction = "document.getElementById('msginfo').remove();";
    div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' " + 
                     "onclick=" + cAction + ">Close</button>";
+   div3.appendChild( div6 );
 
    document.body.appendChild( div1 );
    $('#msginfo').draggable();     
@@ -143,12 +144,13 @@ function MsgGet( cMsg, cTitle )
                     '<p align="right">' + cMsg + "</p></td><td><input type='text' id='get'>" + "</td></tr></table>";
 
    div6.className = "modal-footer";
-   div3.appendChild( div6 );
+   div6.style.border = "0px";
    cAction = "document.getElementById('msgget').remove();";
    div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
                     "onclick=" + cAction + ">Ok</button>" + 
                     "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
                     "onclick=" + cAction + ">Cancel</button>";
+   div3.appendChild( div6 );
 
    document.body.appendChild( div1 );
    $('#msgget').modal('show');  
@@ -193,12 +195,13 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
    div5.innerHTML = cMsg;
             
    div6.className = "modal-footer";
-   div3.appendChild( div6 );
+   div6.style.border = "0px";
    cAction = "document.getElementById('msgyesno').remove();";
    div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' " + 
                     "onclick=" + cAction + ";" + cOnYes + ' style="width:100px;">Yes</button>' + 
                     "<button type='button' class='btn btn-primary' data-dismiss='modal' " + 
                     "onclick=" + cAction + ' style="width:100px;">No</button>';
+   div3.appendChild( div6 );
             
    document.body.appendChild( div1 );
    $('#msgyesno').draggable();
