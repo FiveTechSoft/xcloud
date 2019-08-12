@@ -173,6 +173,7 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
    div1.appendChild( div2 );
             
    div3.className = "modal-content";
+   div3.style.backgroundColor = "#515458";
    div2.appendChild( div3 );
                
    div4.className = "modal-header";
@@ -219,6 +220,7 @@ function MsgMemo( cMsg, cTitle, lHtml )
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
+   div3.style.backgroundColor = "#515458";
    div3.style.width = "1000px";
    div2.appendChild( div3 );
    
