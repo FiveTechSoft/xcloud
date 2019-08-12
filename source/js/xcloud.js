@@ -85,9 +85,10 @@ function MsgInfo( cMsg, cTitle )
    div2.appendChild( div3 );
    
    div4.className = "modal-header";
-   div3.appendChild( div4 );
-   div4.innerHTML = "<h4 class='modal-title'>" + cTitle + "</h4>" + 
+   div4.style.height = "50px";
+   div4.innerHTML = "<h5 class='modal-title'>" + cTitle + "</54>" + 
                     "<button type='button' class='close' data-dismiss='modal'>&times;</button>";
+   div3.appendChild( div4 );
 
    div5.className = "modal-body";
    div5.style.textAlign = "center";
@@ -179,9 +180,10 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
    div2.appendChild( div3 );
                
    div4.className = "modal-header";
-   div3.appendChild( div4 );
-   div4.innerHTML = "<h4 class='modal-title'>" + cTitle + "</h4>" +  
+   div4.style.height = "50px";
+   div4.innerHTML = "<h5 class='modal-title'>" + cTitle + "</54>" +  
                     "<button type='button' class='close' data-dismiss='modal'>&times;</button>";
+   div3.appendChild( div4 );
             
    div5.className = "modal-body";
    div3.appendChild( div5 );
