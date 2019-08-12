@@ -181,7 +181,7 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
                
    div4.className = "modal-header";
    div4.style.height = "50px";
-   div4.innerHTML = "<h5 class='modal-title'>" + cTitle + "</54>" +  
+   div4.innerHTML = "<h5 class='modal-title'>" + cTitle + "</h5>" +  
                     "<button type='button' class='close' data-dismiss='modal'>&times;</button>";
    div3.appendChild( div4 );
             
