@@ -81,7 +81,7 @@ function MsgInfo( cMsg, cTitle )
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
-   div3.style.backgroundColor = "#515458";
+   div3.style.backgroundColor = "#9E9E9E";
    div2.appendChild( div3 );
    
    div4.className = "modal-header";
@@ -130,6 +130,7 @@ function MsgGet( cMsg, cTitle )
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
+   div3.style.backgroundColor = "#9E9E9E";
    div2.appendChild( div3 );
    
    div4.className = "modal-header";
@@ -180,7 +181,7 @@ function MsgYesNo( cMsg, cTitle, cOnYes )
             
    div3.className = "modal-content";
    div5.style.textAlign = "center";
-   div3.style.backgroundColor = "#515458";
+   div3.style.backgroundColor = "#9E9E9E";
    div2.appendChild( div3 );
                
    div4.className = "modal-header";
@@ -230,7 +231,7 @@ function MsgMemo( cMsg, cTitle, lHtml )
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
-   div3.style.backgroundColor = "#515458";
+   div3.style.backgroundColor = "#9E9E9E";
    div3.style.width = "1000px";
    div2.appendChild( div3 );
    
