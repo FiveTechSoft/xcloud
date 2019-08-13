@@ -228,11 +228,13 @@ function MsgMemo( cMsg, cTitle, lHtml )
    div2.className = "modal-dialog";
    div2.style.marginTop = "150px";
    div2.style.marginLeft = "500px";
+   div2.style.width = "1000px";
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
    div3.style.backgroundColor = "#9E9E9E";
    div3.style.width = "1000px";
+   div3.style.boxShadow = "10px 10px 10px darkslategrey";
    div2.appendChild( div3 );
    
    div4.className = "modal-header";
@@ -253,9 +255,6 @@ function MsgMemo( cMsg, cTitle, lHtml )
    cAction = "document.getElementById('msgmemo').remove();";
    div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' " + 
                     "onclick=" + cAction + ">Close</button>";
-
-   div2.style.width = "1000px";
-   div2.style.boxShadow = "10px 10px 10px darkslategrey";
    
    document.body.appendChild( div1 );
    $('#msgmemo').draggable();
