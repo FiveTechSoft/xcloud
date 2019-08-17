@@ -167,7 +167,7 @@ function MsgGet( cMsg, cTitle, cOnOk )
    div6.style.border = "0px";
    cAction = "document.getElementById('msgget').remove();" + cOnOk;
    div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
-                    "onclick=" + cAction + $( '#get' ).val() + ",0);">Ok</button>" + 
+                    "onclick=" + cAction + $( '#get' ).val() + ",0);" + ">Ok</button>" + 
                     "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
                     "onclick=" + cAction + ">Cancel</button>";
    div3.appendChild( div6 );
