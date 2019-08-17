@@ -170,6 +170,7 @@ function MsgGet( cMsg, cTitle )
    div3.appendChild( div6 );
 
    document.body.appendChild( div1 );
+   $('#msgget').draggable(); 
    $('#msgget').modal('show');  
    $('#get').focus();
 }
