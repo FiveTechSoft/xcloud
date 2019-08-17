@@ -158,8 +158,7 @@ function MsgGet( cMsg, cTitle )
 
    div5.className = "modal-body";
    div3.appendChild( div5 );
-   div5.innerHTML = '<table class="table table-striped" style="background-color:' + 
-                    "'#969696'" + ';border:0px;">' +
+   div5.innerHTML = '<table class="table" style="border:0px;">' +
                     '<tr><td style="border:0px;">' + 
                     '<p align="right">' + cMsg + '</p></td><td style="border:0px;">' + 
                     '<input type="text" id="get"></td></tr></table>';
