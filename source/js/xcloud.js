@@ -147,7 +147,7 @@ function MsgGet( cMsg, cTitle )
    div1.appendChild( div2 );
 
    div3.className = "modal-content";
-   div3.style.backgroundColor = "#969696";
+   div3.style.backgroundColor = "#9E9E9E";
    div2.appendChild( div3 );
    
    div4.className = "modal-header";
@@ -159,7 +159,7 @@ function MsgGet( cMsg, cTitle )
    div5.className = "modal-body";
    div3.appendChild( div5 );
    div5.innerHTML = '<table class="table table-striped" style="background-color:' + 
-                    "'#9E9E9E'" + ';border:0px;">' +
+                    "'#969696'" + ';border:0px;">' +
                     '<tr><td style="border:0px;">' + 
                     '<p align="right">' + cMsg + '</p></td><td style="border:0px;">' + 
                     '<input type="text" id="get"></td></tr></table>';
