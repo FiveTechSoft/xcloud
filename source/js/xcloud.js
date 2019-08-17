@@ -175,7 +175,9 @@ function MsgGet( cMsg, cTitle, cOnOk )
 
    document.body.appendChild( div1 );
    $('#msgget').draggable(); 
-   $('#get').focus();
+   $('#msgget').on( 'shown', function() {
+      $('#get').focus();
+   });
    $('#msgget').modal('show');  
 }
 
