@@ -148,6 +148,7 @@ function MsgGet( cMsg, cTitle, cOnOk )
 
    div3.className = "modal-content";
    div3.style.backgroundColor = "#9E9E9E";
+   div3.style.border = "0px";
    div2.appendChild( div3 );
    
    div4.className = "modal-header";
