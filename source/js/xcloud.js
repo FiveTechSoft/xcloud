@@ -124,7 +124,7 @@ function MsgInfo( cMsg, cTitle )
    $('#msginfo').modal('show');  
 }
 
-function MsgGet( cMsg, cTitle )
+function MsgGet( cMsg, cTitle, cOnOk )
 {  
    var div1 = document.createElement( "div" );
    var div2 = document.createElement( "div" );
@@ -165,7 +165,7 @@ function MsgGet( cMsg, cTitle )
 
    div6.className = "modal-footer";
    div6.style.border = "0px";
-   cAction = "document.getElementById('msgget').remove();";
+   cAction = "document.getElementById('msgget').remove();" + cOnOk + $( '#get' ).val() + ",0);";
    div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
                     "onclick=" + cAction + ">Ok</button>" + 
                     "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
@@ -174,8 +174,8 @@ function MsgGet( cMsg, cTitle )
 
    document.body.appendChild( div1 );
    $('#msgget').draggable(); 
-   $('#msgget').modal('show');  
    $('#get').focus();
+   $('#msgget').modal('show');  
 }
 
 function MsgYesNo( cMsg, cTitle, cOnYes )
