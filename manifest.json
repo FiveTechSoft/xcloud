@@ -1,6 +1,8 @@
 {
-"permissions": [
-  "clipboardRead",
-  "clipboardWrite"
-]
+  "short_name": "modpro",
+  "name": "modpro for FoxPro users",
+  "permissions": [
+     "clipboardRead",
+     "clipboardWrite"
+  ]
 }
