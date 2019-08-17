@@ -59,6 +59,22 @@ function RunCode( cCode, cResultId )
       .fail( function( data ) { console.log( 'ERROR', data ); } );
 }
 
+function RunUrl( cUrl )
+{
+   var rawFile = new XMLHttpRequest();
+
+   rawFile.open( "GET", file, false );
+   
+   rawFile.onreadystatechange = function ()
+   {
+       if( rawFile.readyState === 4 )
+           if( rawFile.status === 200 || rawFile.status == 0 )
+               RunCode( rawFile.responseText );
+   }
+   
+   rawFile.send( null );
+}
+
 function MsgInfo( cMsg, cTitle )
 {  
    var div1 = document.createElement( "div" );
