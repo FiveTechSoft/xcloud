@@ -166,7 +166,7 @@ function MsgGet( cMsg, cTitle, cOnOk )
 
    div6.className = "modal-footer";
    div6.style.border = "0px";
-   cAction = cOnOk + "document.getElementById('get').value,0);document.getElementById('msgget').remove();";
+   cAction = cOnOk + "document.getElementById('get').value);document.getElementById('msgget').remove();";
    div6.innerHTML = "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
                     'onclick="' + cAction + '">Ok</button>' + 
                     "<button type='button' class='btn btn-primary' data-dismiss='modal' style='width:90px'" + 
