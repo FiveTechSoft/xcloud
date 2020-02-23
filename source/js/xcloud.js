@@ -35,10 +35,6 @@ function Run()
 {
    var o = new Object();
  
-   localStorage.setItem( 'code', editor.getValue() );
-   localStorage.setItem( 'editor-width', $( "#editor" ).css( "width" ) );
-   localStorage.setItem( 'right-margin-left', $( "#right" ).css( "margin-left" ) );   
-   
    o[ 'source' ] = editor.getValue();
    console.log( 'PARAM', o );
             
