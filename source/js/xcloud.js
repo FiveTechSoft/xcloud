@@ -39,7 +39,8 @@ function Run()
    console.log( 'PARAM', o );
             
    $.post( "run.prg", o )
-      .done( function( data ) { console.log( 'DONE', data ); $('#output').html( data ); } )
+      .done( function( data ) { console.log( 'DONE', data ); $('#output').html( data ); 
+                                localStorage.setItem( 'result', data ); } )
       .fail( function( data ) { console.log( 'ERROR', data ); } ); 
 }
 
