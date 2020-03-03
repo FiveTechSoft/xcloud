@@ -127,7 +127,7 @@ function MsgInfo( cMsg, cTitle )
    $('#msginfo').modal('show');  
 }
 
-function MsgGet( cMsg, cTitle, cOnOk )
+function MsgGet( cMsg, cTitle, cOnOk, cInit )
 {  
    var div1 = document.createElement( "div" );
    var div2 = document.createElement( "div" );
@@ -165,7 +165,7 @@ function MsgGet( cMsg, cTitle, cOnOk )
    div5.innerHTML = '<table class="table" style="border:0px;">' +
                     '<tr><td style="border:0px;">' + 
                     '<p align="right">' + cMsg + '</p></td><td style="border:0px;">' + 
-                    '<input type="text" id="get"></td></tr></table>';
+                    '<input type="text" id="get" value="' + cInit + '"></td></tr></table>';
 
    div6.className = "modal-footer";
    div6.style.border = "0px";
