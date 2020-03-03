@@ -36,6 +36,7 @@ function Run()
    var o = new Object();
  
    o[ 'source' ] = editor.getValue();
+   o[ 'params' ] = localStorage.getItem( 'params' );
    console.log( 'PARAM', o );
             
    $.post( "run.prg", o )
