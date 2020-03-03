@@ -36,10 +36,9 @@ function Run()
    var o = new Object();
  
    o[ 'source' ] = editor.getValue();
-   o[ 'params' ] = localStorage.getItem( 'params' );
    console.log( 'PARAM', o );
             
-   $.post( "run.prg", o )
+   $.post( "run.prg" + "?" + localStorage.getItem( 'params' ), o )
       .done( function( data ) { console.log( 'DONE', data ); $('#output').html( data );
                                 localStorage.setItem( 'code', editor.getValue() );
                                 localStorage.setItem( 'result', data ); } )
