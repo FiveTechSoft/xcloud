@@ -29,7 +29,7 @@ background: rgb(127, 111, 19)\
 }\
 .ace-tomorrow-night-blue .ace_marker-layer .ace_bracket {\
 margin: -1px 0 0 -1px;\
-border: 1px solid #404F7D\
+border: 1px solid #FFFF9F\
 }\
 .ace-tomorrow-night-blue .ace_marker-layer .ace_active-line {\
 background: #00346E\
