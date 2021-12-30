@@ -39,7 +39,7 @@ function Run()
    o[ 'params' ] = sessionStorage.getItem( 'params' );
    console.log( 'PARAM', o );
             
-   $.post( "run.prg", o )
+   $.post( "modharbour?run.prg", o )
       .done( function( data ) { console.log( 'DONE', data ); $('#output').html( data );
                                 sessionStorage.setItem( 'code', editor.getValue() );
                                 sessionStorage.setItem( 'result', data ); } )
