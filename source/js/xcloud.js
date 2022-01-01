@@ -40,9 +40,9 @@ function Run()
    console.log( 'PARAM', o );
             
    $.ajax({
-      url: “modharbour?run.prg”,
-      type: “POST”,
-      headers: { “Content-type”: “form-data” },
+      url: "modharbour?run.prg",
+      type: "POST",
+      headers: { "Content-type": "form-data" },
       data: o
    }).done( function( data ) { console.log( 'DONE', data ); $('#output').html( data );
                                 sessionStorage.setItem( 'code', editor.getValue() );
