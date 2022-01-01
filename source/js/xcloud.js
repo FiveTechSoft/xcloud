@@ -43,7 +43,8 @@ function Run()
       url: "modharbour?run.prg",
       type: "POST",
       headers: { "Content-type": "form-data" },
-      data: o
+      data: o,
+      accepts: “text”
    }).done( function( data ) { console.log( 'DONE', data ); $('#output').html( data );
                                 sessionStorage.setItem( 'code', editor.getValue() );
                                 sessionStorage.setItem( 'result', data ); } )
