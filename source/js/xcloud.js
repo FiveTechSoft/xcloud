@@ -44,7 +44,7 @@ function Run()
       type: "POST",
       headers: { "Content-type": "form-data" },
       data: o,
-      accepts: “text”
+      accepts: "text"
    }).done( function( data ) { console.log( 'DONE', data ); $('#output').html( data );
                                 sessionStorage.setItem( 'code', editor.getValue() );
                                 sessionStorage.setItem( 'result', data ); } )
