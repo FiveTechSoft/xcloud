@@ -39,11 +39,15 @@ function Run()
    o[ 'params' ] = sessionStorage.getItem( 'params' );
    console.log( 'PARAM', o );
             
-   $.post( "modharbour?run.prg", o )
-      .done( function( data ) { console.log( 'DONE', data ); $('#output').html( data );
+   $.ajax({
+      url: “modharbour?run.prg”,
+      type: “POST”,
+      headers: { “Content-type”: “form-data” },
+      data: o
+   }).done( function( data ) { console.log( 'DONE', data ); $('#output').html( data );
                                 sessionStorage.setItem( 'code', editor.getValue() );
                                 sessionStorage.setItem( 'result', data ); } )
-      .fail( function( data ) { console.log( 'ERROR', data ); } ); 
+     .fail( function( data ) { console.log( 'ERROR', data ); } ); 
 }
 
 function RunCode( cCode, cResultId )
