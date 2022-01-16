@@ -60,7 +60,7 @@ function RunBH()
    console.log( 'PARAM', o );
             
    $.ajax({
-      url: "www.fivetechsoft.com/counter/run.php",
+      url: "run.php",
       type: "POST",
       headers: { "Content-type": "form-data" },
       data: o,
