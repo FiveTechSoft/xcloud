@@ -60,7 +60,7 @@ function RunBH()
    console.log( 'PARAM', o );
             
    $.ajax({
-      url: "run.php",
+      url: "counter/run.php",
       type: "POST",
       headers: { "Content-type": "form-data" },
       data: o,
