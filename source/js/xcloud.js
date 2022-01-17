@@ -63,7 +63,7 @@ function RunBH()
       url: "run.php",
       type: "POST",
       headers: { "Content-type": "x-www-form-urlencoded" },
-      data: o.toString()
+      data: o
    }).done( function( data ) { console.log( 'DONE', data ); $('#output').html( data );
                                 sessionStorage.setItem( 'code', editor.getValue() );
                                 sessionStorage.setItem( 'result', data ); } )
