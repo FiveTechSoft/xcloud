@@ -62,8 +62,9 @@ function RunBH()
    $.ajax({
       url: "run.php",
       type: "POST",
-      headers: { "Content-type": "x-www-form-urlencoded" },
-      data: o
+      headers: { "Content-type": "form-data" },
+      data: o,
+      accepts: "text/html"
    }).done( function( data ) { console.log( 'DONE', data ); $('#output').html( data );
                                 sessionStorage.setItem( 'code', editor.getValue() );
                                 sessionStorage.setItem( 'result', data ); } )
